@@ -1,0 +1,349 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #F5F8FA;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+ 
+/* main code*/
+
+main{
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding: 0px 40px 0;
+  font-family: lato;
+  border-radius: 6px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #E0E6EA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+.nav-links ul button{
+border-radius: 6px;
+border: 2px solid #646E7A;
+padding: 0.5rem 1rem;
+background-color: #fefefe;
+}
+
+.form{
+width: 892px;
+height: auto;
+flex-shrink: 0;
+margin:3rem auto;
+display: flex;
+flex-direction: row;
+}
+
+.left-form{
+border-radius: 6px;
+box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
+  width:60%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.left-form h1{
+color: #1D2C3C;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Lato;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-bottom: 2px solid #E0E6EA;
+padding-bottom: 30px;
+
+
+}
+
+
+
+.basic-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.all-forms{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container{
+  margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+ 
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+form input {
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #EDEFF2;
+  height: 36px;
+}
+
+.email-form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  border-bottom: 2px solid #E0E6EA;
+  padding-bottom: 30px;
+}
+
+.email-form input{
+ width:370px;
+ height: 36px;
+}
+
+.credit-form{
+ padding-top: 30px;
+ display: flex;
+ flex-direction: column;
+ gap:7px;
+ border-bottom: 2px solid #E0E6EA;
+  padding-bottom: 30px;
+}
+
+.buy-button{
+ 
+  border: none;
+  border-radius: 5px;
+  background: #038E7D;
+  width: 100%;
+  height: 52px;
+  flex-shrink: 0;
+  color: #ffffff;
+  margin-top: 30px;
+  
+}
+
+.right-form{
+  background-color: #1179BF;
+  width:40%;
+  height:800px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  color:#ffffff;
+}
+
+
+.number {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.number h1{
+  font-size: 70px;font-weight: lighter;
+}
+
+.number h3 {
+  position: relative;
+  top: 20px;
+  font-size: 24px;
+}
+
+.number h4{
+  position: relative;
+  top: 55px;
+}
+
+ .right-form > p{
+font-style: italic;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.008px;
+width: 50%;
+ }
+
+ .mark-section{
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+
+ .mark-texts{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+ }
+
+ .client-text-container{
+  margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+ }
+
+ .client-text-container span{
+  font-weight: bold;
+ }
+
+.line-control{
+  width: 70%;
+}
+
+.line-control hr{
+  height: 3px;
+  background-color:  rgba(185, 245, 255, 0.5036);
+  ;
+  border: none;
+  margin-top: -7px;
+  
+}
+
+.ftp-text{
+  margin-top:30px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2005);
+  padding-top:38px;
+}
+
+.kirk-image{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.kirk-image img{
+  border-radius: 50%;
+}
+
+.kirk-image p{
+ font-weight: bold;
+}
+
+.need-help{
+  display: flex;
+  flex-direction: row;
+  margin-top: 28px;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+}
+
+.need-help p{
+  max-width: 60%;
+}
+
+.stripe{
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms-of-service{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.need-help span{
+  border-bottom:2px solid rgb(92, 92, 92);
+}
